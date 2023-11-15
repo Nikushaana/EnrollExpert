@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+  }
+
+  @media  (min-width:1800px) {
+    .more1800pxresp{
+        width: 1216px;
+        padding-left: unset;
+        padding-right: unset;
+    }
+}
+
+  @font-face {
+    font-family: dejavucaps;
+    src: url(./fonts/BPG-2017-DejaVu-Sans-Caps\ \(1\).ttf);
+  }
+  
+  @font-face {
+    font-family: dejavu;
+    src: url(./fonts/BPG-2017-DejaVuSans\ \(1\).ttf)
+  }
+  
+  
+  
+  p,
+  a,
+  ::placeholder,
+  ul li,
+  button {
+    font-family: dejavu;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .menu-list,
+   {
+    font-family: dejavucaps;
+  }
+  
+  @keyframes move-left-right {
+    0% {
+      transform: translateX(5px);
+    }
+    50% {
+      transform: translateX(-5px);
+    }
+    100% {
+      transform: translateX(5px);
+    }
+  }
+  
+  .orangegirl {
+    animation: move-left-right 4s infinite;
+  }
+
+  .imageexps:hover .imageexperience{
+    transform: rotateY(360deg);
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+
+  .blogtextscroll::-webkit-scrollbar{
+    width: 0px;
+  }
+
+  .widthblogtextscroll::-webkit-scrollbar{
+    width: 5px;
+  }
+
+  .widthblogtextscroll::-webkit-scrollbar-thumb{
+    background-color: gray;
+    border-radius: 20px;
+  }
+
+  .blogtitle{
+    overflow: hidden;
+    display: -webkit-box;
+  -webkit-box-orient: vertical;
+  white-space: pre-wrap;
+  -webkit-line-clamp: 1;
+  }
+  .blogtext{
+    overflow: hidden;
+    display: -webkit-box;
+  -webkit-box-orient: vertical;
+  white-space: pre-wrap;
+  -webkit-line-clamp: 3;
+  }
